@@ -1,0 +1,42 @@
+#root {
+    --bgColor: #f3f5fa;
+    --textColor: #040509;
+}
+
+@font-face {
+    font-family: fontAnella;
+    src: url("assets/font/Quicksand-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    font-family: "fontAnella", Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 75px;
+    z-index: 1000;
+    ul { display: flex; justify-content: end; height: 100%; align-items: center; gap: 50px; list-style: none; margin-right: 50px; }
+}
+
+#HomePage {
+    background-image: url(assets/carlo-urbani.webp);
+    width: 100svw;
+    height: 100svh;
+    position: absolute;
+    top: 0;
+    padding: 100px 50px;
+}
