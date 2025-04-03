@@ -5,7 +5,7 @@ function scrollToSection(sectionId) {
     // Usa il metodo scrollIntoView per un effetto di scroll fluido
     section.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
     });
 }
 
