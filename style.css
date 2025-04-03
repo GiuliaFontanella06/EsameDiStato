@@ -22,7 +22,7 @@
 
 /* Smartphone piccolo */
 @media (max-width: 480px) {
-    :root { font-size: 12px; --distanzaMedia: 1rem; }
+    :root { font-size: 12px; --distanzaMedia: 1.5rem; }
 }
 
 @font-face {
