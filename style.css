@@ -1,7 +1,8 @@
 :root {
-    --bgColor: #f3f5fa;
+    --bgColor: #F3F5Fa;
     --textColor: #040509;
-    --primaryColor: #ebe724;
+    --primaryColor: #E2BA69;
+    --cardColor: #5B5353;
 
     --fontSize: 16px; /* Desktop */
 
