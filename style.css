@@ -78,7 +78,7 @@ nav {
         gap: var(--distanzaMedia);
         list-style: none;
         margin-right: var(--distanzaMedia);
-        li { cursor: pointer; }
+        li { cursor: pointer; -webkit-tap-highlight-color: transparent; }
         li.active {
             text-shadow: 1px 0 black;
             text-decoration: underline;
