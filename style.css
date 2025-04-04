@@ -2,7 +2,8 @@
     --bgColor: #F3F5Fa;
     --textColor: #040509;
     --primaryColor: #E2BA69;
-    --cardColor: #5B5353;
+    /* --cardColor: #5B5353; */
+    --cardColor: rgb(131, 141, 147, .5);
 
     --fontSize: 16px; /* Desktop */
 
@@ -23,6 +24,7 @@
 /* Smartphone piccolo */
 @media (max-width: 480px) {
     :root { font-size: 12px; --distanzaMedia: 1.5rem; }
+    #citHome { display: none; }
 }
 
 @font-face {
@@ -38,7 +40,7 @@
     background: var(--bgColor);
   }
 *::-webkit-scrollbar-thumb {
-    background-color: var(--primaryColor);
+    background-color: var(--cardColor);
     border-radius: 20px;
     border: 3px solid var(--bgColor);
   }
@@ -58,7 +60,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-h1 { font-size: 4.125rem; line-height: 6.67rem; }
+h1 { font-size: 4.125rem; line-height: 6.67rem; z-index: 10; }
 h2 { font-size: 2.5625rem; line-height: 4.15rem; }
 h3 { font-size: 1.5625rem; line-height: 2.53rem; }
 
@@ -94,12 +96,25 @@ nav.scrolled {
 section { padding: 5rem var(--distanzaMedia); }
 
 #HomePage {
-    background-image: url(assets/carlo-urbani.webp);
-    background-size: cover;
-    background-position: center;
     height: 100lvh;
-    top: 0;
-    position: relative;
+    #textHome { position: relative; z-index: 10;}
+    #citHome {
+        background-color: var(--cardColor);
+        padding: 20px 35px;
+        border-radius: 30px;
+        position: absolute;
+        bottom: var(--distanzaMedia);
+        right: var(--distanzaMedia);
+        z-index: 10;
+    }
+    #fotoHome {
+        height: 100lvh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    }
 }
 
 #CapolavoriPage { height: 1000px; }
