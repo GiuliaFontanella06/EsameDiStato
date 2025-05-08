@@ -1,29 +1,30 @@
 :root {
-    --bgColor: #F3F5Fa;
+    --bgColor: #f5f5f5;
     --textColor: #040509;
     --primaryColor: #E2BA69;
     /* --cardColor: #5B5353; */
     --cardColor: rgb(131, 141, 147, .5);
 
     --fontSize: 16px; /* Desktop */
+    --fontSizeSmall: 14px; /* Desktop */
 
-    --distanzaMedia: 3rem;
+    --distanzaXS: .5rem;
+    --distanzaS: 2rem;
+    --distanzaM: 3rem;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
-    :root { font-size: 15px; --distanzaMedia: 2.5rem }
     HomePage { padding: 5rem 2.5rem; }
 }
 
 /* Smartphone grande */
 @media (max-width: 768px) {
-    :root { font-size: 14px; --distanzaMedia: 2rem; }
+    html, body { font-size: var(--fontSizeSmall) !important; }
 }
 
 /* Smartphone piccolo */
 @media (max-width: 480px) {
-    :root { font-size: 12px; --distanzaMedia: 1.5rem; }
     #citHome { display: none; }
 }
 
@@ -77,9 +78,9 @@ nav {
         justify-content: end;
         height: 100%;
         align-items: center;
-        gap: var(--distanzaMedia);
+        gap: var(--distanzaM);
         list-style: none;
-        margin-right: var(--distanzaMedia);
+        margin-right: var(--distanzaM);
         li { cursor: pointer; -webkit-tap-highlight-color: transparent; }
         li.active {
             text-shadow: 1px 0 black;
@@ -93,7 +94,7 @@ nav.scrolled {
     opacity: 95%;
 }
 
-section { padding: 5rem var(--distanzaMedia); }
+section { padding: 5rem var(--distanzaM); }
 
 #HomePage {
     height: 100lvh;
@@ -103,8 +104,8 @@ section { padding: 5rem var(--distanzaMedia); }
         padding: 20px 35px;
         border-radius: 30px;
         position: absolute;
-        bottom: var(--distanzaMedia);
-        right: var(--distanzaMedia);
+        bottom: var(--distanzaM);
+        left: var(--distanzaM);
         z-index: 10;
     }
     #fotoHome {
@@ -117,6 +118,19 @@ section { padding: 5rem var(--distanzaMedia); }
     }
 }
 
-#CapolavoriPage { height: 1000px; }
+#capolavoriPage {
+    .fotoCapolavoro {
+        margin: var(--distanzaS) 0;
+        text-align: center;
+        img { width: 29vw; padding: var(--distanzaXS); }
+    }
+    .capolavoroMotivo {
+        padding: var(--distanzaS) var(--distanzaM);
+        background-color: var(--cardColor);
+        border-radius: 30px;
+        text-align: center;
+    }
+}
+#eduCivicaPage { height: 1000px; }
 #PCTOPage { height: 1000px; }
-#RicordiPage { height: 1000px; }
+#ricordiPage { height: 1000px; }

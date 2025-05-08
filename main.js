@@ -37,7 +37,7 @@ window.addEventListener('scroll', highlightMenu);
 document.addEventListener('DOMContentLoaded', highlightMenu);
 
 
-// Modifica navbar dopo scroll
+// Modifica navbar dopo scroll (cambia colore)
 const navbar = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {  // Quando l'utente ha iniziato a scrollare
