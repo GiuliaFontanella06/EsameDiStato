@@ -119,6 +119,9 @@ section { padding: 5rem var(--distanzaM); }
 }
 
 #capolavoriPage {
+    .capolavoro:not(:first-child) {
+        margin-bottom: var(--distanzaM);
+    }
     .fotoCapolavoro {
         margin: var(--distanzaS) 0;
         text-align: center;
