@@ -1,0 +1,28 @@
+%!Adobe-FontList 1.24
+%Locale:0x410
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Quicksand-Light
+FamilyName:Quicksand
+StyleName:Light
+FullName:Quicksand Light
+MenuName:Quicksand Light
+FamilyPrefix:Quicksand
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\manux\Desktop\Dev\SitoGiuliaEsameDiStato\EsameDiStato\assets\Font\Quicksand-VariableFont_wght.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:TrueTypeVariableFont
+FileLength:126624
+FileModTime:1746821550
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Quicksand Light
+NameArray:0,Win,16,Quicksand
+%EndFont
+

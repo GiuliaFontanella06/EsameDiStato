@@ -108,11 +108,18 @@ img { border-radius: 20px; }
 .card.dark { background-color: var(--cardColor); }
 .card.light { background-color: var(--bgColor); }
 
+footer {
+    background-color: var(--cardColor);
+    text-align: center;
+    width: 100%;
+    padding: var(--distanzaM) 0;
+}
+
 section { padding: 5rem var(--distanzaL); }
 
 #HomePage {
     height: 100lvh;
-    background-image: url(assets/images/SfondoHome.png);
+    background-image: url(assets/images/pexels-mlkbnl-9247613.jpg);
     flex-grow: 1; /* per avere immagine della grandezza giusta */
     background-size: cover;
     background-position: bottom left;
@@ -152,7 +159,9 @@ section { padding: 5rem var(--distanzaL); }
 }
 
 #ricordiPage {
-    img {
-        width: 40%;
+    h2 { margin-bottom: var(--distanzaM);}
+    #fotoRicordi { width: 100%; pointer-events: none; padding: 0 20%; }
+    @media (max-width: 900px) {
+        #fotoRicordi { padding: 0 !important; }
     }
 }
