@@ -112,8 +112,9 @@ section { padding: 5rem var(--distanzaL); }
 
 #HomePage {
     height: 100lvh;
-    background-image: url(assets/SfondoHome.png);
+    background-image: url(assets/images/SfondoHome.png);
     flex-grow: 1; /* per avere immagine della grandezza giusta */
+    background-size: cover;
     background-position: bottom left;
     background-repeat: no-repeat;
     #testoHome { color: var(--bgColor); }
@@ -150,4 +151,8 @@ section { padding: 5rem var(--distanzaL); }
     .card:not(:first-child) { margin-top: var(--distanzaM); }
 }
 
-#ricordiPage { height: 1000px; }
+#ricordiPage {
+    img {
+        width: 40%;
+    }
+}
