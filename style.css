@@ -4,13 +4,15 @@
     --primaryColor: #E2BA69;
 
     --cardColor: rgb(131, 141, 147, .25);
+    --cardColorDark: rgba(245, 245, 245, .5);
 
     --fontSize: 16px; /* Desktop */
     --fontSizeSmall: 14px; /* Smartphone */
 
     --distanzaXS: .5rem;
-    --distanzaS: 2rem;
-    --distanzaM: 3rem;
+    --distanzaS: 1rem;
+    --distanzaM: 2rem;
+    --distanzaL: 3rem;
 }
 
 /* Tablet */
@@ -25,6 +27,9 @@
 
 /* Smartphone piccolo */
 @media (max-width: 480px) {
+    h1 { font-size: 3.5rem !important; }
+    h3 { margin-bottom: var(--distanzaS) !important; }
+    nav { ul { gap: var(--distanzaM) !important; margin-right: var(--distanzaM) !important; } }
     #citHome { display: none; }
 }
 
@@ -60,10 +65,9 @@ html, body {
     line-height: 1.618rem;
     scroll-behavior: smooth;
 }
-
-h1 { font-size: 4.125rem; line-height: 6.67rem; z-index: 10; }
-h2 { font-size: 2.5625rem; line-height: 4.15rem; }
-h3 { font-size: 1.5625rem; line-height: 2.53rem; }
+h1 { font-size: 4.125rem; line-height: 4.75rem; margin-bottom: var(--distanzaS); z-index: 10; }
+h2 { font-size: 2.5625rem; line-height: 3.25rem; margin-bottom: var(--distanzaXS); }
+h3 { font-size: 1.5625rem; line-height: 2.53rem; margin-bottom: var(--distanzaXS) }
 
 nav {
     position: fixed;
@@ -78,9 +82,9 @@ nav {
         justify-content: end;
         height: 100%;
         align-items: center;
-        gap: var(--distanzaM);
+        gap: var(--distanzaL);
         list-style: none;
-        margin-right: var(--distanzaM);
+        margin-right: var(--distanzaL);
         li { cursor: pointer; -webkit-tap-highlight-color: transparent; }
         li.active {
             text-shadow: 1px 0 black;
@@ -97,44 +101,38 @@ nav.scrolled {
 img { border-radius: 20px; }
 
 .card {
-    padding: var(--distanzaS) var(--distanzaM);
+    padding: var(--distanzaM) var(--distanzaL);
     border-radius: 30px;
     text-align: center;
 }
-
 .card.dark { background-color: var(--cardColor); }
 .card.light { background-color: var(--bgColor); }
 
-section { padding: 5rem var(--distanzaM); }
+section { padding: 5rem var(--distanzaL); }
 
 #HomePage {
     height: 100lvh;
-    #textHome { position: relative; z-index: 10;}
+    background-image: url(assets/SfondoHome.png);
+    flex-grow: 1; /* per avere immagine della grandezza giusta */
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    #testoHome { color: var(--bgColor); }
     #citHome {
-        background-color: var(--cardColor);
+        background-color: rgb(131, 141, 147, .85);
+        text-align: right;
         padding: 20px 35px;
         border-radius: 30px;
         position: absolute;
-        bottom: var(--distanzaM);
-        left: var(--distanzaM);
+        bottom: var(--distanzaL);
+        right: var(--distanzaL);
         z-index: 10;
-    }
-    #fotoHome {
-        height: 100lvh;
-        position: absolute;
-        top: 0;
-        right: 0;
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     }
 }
 
 #capolavoriPage {
-    .capolavoro:not(:first-child) {
-        margin-bottom: var(--distanzaM);
-    }
+    .capolavoro:not(:first-child) { margin-bottom: var(--distanzaL); }
     .fotoCapolavoro {
-        margin: var(--distanzaS) 0;
+        margin: var(--distanzaM) 0;
         text-align: center;
         img { width: 29vw; padding: var(--distanzaXS); }
     }
@@ -148,8 +146,8 @@ section { padding: 5rem var(--distanzaM); }
 
 #PCTOPage {
     background-color: var(--cardColor);
-    .card:first-child { margin-top: var(--distanzaM); }
-    .card:not(:first-child) { margin-top: var(--distanzaS); }
+    .card:first-child { margin-top: var(--distanzaL); }
+    .card:not(:first-child) { margin-top: var(--distanzaM); }
 }
 
 #ricordiPage { height: 1000px; }
