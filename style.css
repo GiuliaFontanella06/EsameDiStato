@@ -2,7 +2,7 @@
     --bgColor: #f5f5f5;
     --textColor: #040509;
     --primaryColor: #E2BA69;
-    /* --cardColor: #5B5353; */
+
     --cardColor: rgb(131, 141, 147, .25);
 
     --fontSize: 16px; /* Desktop */
@@ -98,10 +98,12 @@ img { border-radius: 20px; }
 
 .card {
     padding: var(--distanzaS) var(--distanzaM);
-    background-color: var(--cardColor);
     border-radius: 30px;
     text-align: center;
 }
+
+.card.dark { background-color: var(--cardColor); }
+.card.light { background-color: var(--bgColor); }
 
 section { padding: 5rem var(--distanzaM); }
 
@@ -145,6 +147,7 @@ section { padding: 5rem var(--distanzaM); }
 }
 
 #PCTOPage {
+    background-color: var(--cardColor);
     .card:first-child { margin-top: var(--distanzaM); }
     .card:not(:first-child) { margin-top: var(--distanzaS); }
 }
