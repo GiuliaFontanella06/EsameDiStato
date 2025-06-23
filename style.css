@@ -3,10 +3,10 @@
     --textColor: #040509;
     --primaryColor: #E2BA69;
     /* --cardColor: #5B5353; */
-    --cardColor: rgb(131, 141, 147, .5);
+    --cardColor: rgb(131, 141, 147, .25);
 
     --fontSize: 16px; /* Desktop */
-    --fontSizeSmall: 14px; /* Desktop */
+    --fontSizeSmall: 14px; /* Smartphone */
 
     --distanzaXS: .5rem;
     --distanzaS: 2rem;
