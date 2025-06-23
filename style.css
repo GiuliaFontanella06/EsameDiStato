@@ -136,8 +136,8 @@ section { padding: 5rem var(--distanzaM); }
     @media (max-width: 805px) {
         .fotoCapolavoro { img { width: 40vw; } }
     }
-    @media (max-width: 700px) {
-        .fotoCapolavoro { img { width: 60vw; } }
+    @media (max-width: 600px) {
+        .fotoCapolavoro { img { width: 70vw; } }
     }
 }
 #PCTOPage { height: 1000px; }
