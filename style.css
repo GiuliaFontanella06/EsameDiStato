@@ -34,7 +34,7 @@
 }
 
 /* Stile Scrollbar */
-*::-webkit-scrollbar { /* Modifica scrollbar su Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
     width: 12px;
   }
 *::-webkit-scrollbar-track {
@@ -133,7 +133,12 @@ section { padding: 5rem var(--distanzaM); }
         border-radius: 30px;
         text-align: center;
     }
+    @media (max-width: 805px) {
+        .fotoCapolavoro { img { width: 40vw; } }
+    }
+    @media (max-width: 700px) {
+        .fotoCapolavoro { img { width: 60vw; } }
+    }
 }
-#eduCivicaPage { height: 1000px; }
 #PCTOPage { height: 1000px; }
 #ricordiPage { height: 1000px; }
