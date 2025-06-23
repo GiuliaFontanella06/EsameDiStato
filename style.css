@@ -5,6 +5,7 @@
 
     --cardColor: rgb(131, 141, 147, .25);
     --cardColorDark: rgba(245, 245, 245, .5);
+    --cardColorLight: rgba(245, 245, 245, .75);;
 
     --fontSize: 16px; /* Desktop */
     --fontSizeSmall: 14px; /* Smartphone */
@@ -81,6 +82,7 @@ nav {
         display: flex;
         justify-content: end;
         height: 100%;
+        color: var(--bgColor);
         align-items: center;
         gap: var(--distanzaL);
         list-style: none;
@@ -96,6 +98,7 @@ nav {
 nav.scrolled {
     background-color: var(--bgColor);
     opacity: 95%;
+    ul { color: var(--textColor); }
 }
 
 img { border-radius: 20px; }
@@ -119,14 +122,14 @@ section { padding: 5rem var(--distanzaL); }
 
 #HomePage {
     height: 100lvh;
-    background-image: url(assets/images/pexels-mlkbnl-9247613.jpg);
+    background-image: url(assets/images/SfondoHome.webp);
     flex-grow: 1; /* per avere immagine della grandezza giusta */
     background-size: cover;
     background-position: bottom left;
     background-repeat: no-repeat;
     #testoHome { color: var(--bgColor); }
     #citHome {
-        background-color: rgb(131, 141, 147, .85);
+        background-color: var(--cardColorLight);
         text-align: right;
         padding: 20px 35px;
         border-radius: 30px;
