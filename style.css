@@ -101,7 +101,7 @@ nav.scrolled {
     ul { color: var(--textColor); }
 }
 
-img { border-radius: 20px; }
+img:not(#fotoRicordi) { border-radius: 20px; }
 
 .card {
     padding: var(--distanzaM) var(--distanzaL);
