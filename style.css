@@ -125,7 +125,7 @@ section { padding: 5rem var(--distanzaL); }
     background-image: url(assets/images/SfondoHome.webp);
     flex-grow: 1; /* per avere immagine della grandezza giusta */
     background-size: cover;
-    background-position: bottom left;
+    background-position: bottom right;
     background-repeat: no-repeat;
     #testoHome { color: var(--bgColor); }
     #citHome {
