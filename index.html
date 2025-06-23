@@ -6,88 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- inserimento sito in risultati ricerca google -->
-    
+    <meta name="google-site-verification" content="W4m6-Cg3xkpEOSg0rzPIgE6C3gl7yw95aOWXSdd87gM" />
+
+    <!-- evita modalità dark del sito -->
+    <meta name="color-scheme" content="only light">
     
     <!-- favicon per i vari dispositivi (anche icone sito aggiunto a desktop) -->
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="Assets/images/favicon/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="Assets/images/favicon/safari-pinned-tab.svg" color="#040405">
+    <link rel="shortcut icon" href="Assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ede8dd">
+    <meta name="msapplication-TileImage" content="Assets/images/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="Assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ede8dd">
 
     <link rel="stylesheet" href="style.css">
-    <title>Esame di Stato 2024/2025 - Giulia Fontanella</title>
-    <meta name="description" content="Una presentazione dei capolavori, degli elaborati di educazione civica, dei progetti di PCTO e dei ricordi accumulati durante questi cinque anni, con compagni e professori, da Giulia Fontanella.">
+    <title>Esame di Stato 2022/2023 - Ciotola Emanuele</title>
+    <meta name="description" content="Sito realizzato per l'Esame di Stato di Ciotola Emanuele. Vengono qui esposti gli elaborati di Educazione Civica e PCTO risultanti dalla conclusione del percorso scolastico.">
 </head>
 <body>
-    <!-- Barra di navigazione del sito -->
-    <nav>
-      <ul>
-        <li onclick="scrollToSection('HomePage')">Home</li>
-        <li onclick="scrollToSection('capolavoriPage')">Capolavori</li>
-        <li onclick="scrollToSection('PCTOPage')">PCTO</li>
-        <li onclick="scrollToSection('ricordiPage')">Ricordi</li>
-      </ul>  
+    <nav id="menu">
+        <ul>
+            <li><a id="home" class="active" onclick="goTo(id)">Home</a></li><!--
+            --><li><a id="educazione_civica" onclick="goTo(id)">Educazione civica</a></li><!--
+            --><li><a id="pcto" onclick="goTo(id)">Pcto</a>
+            </li>
+        </ul>
     </nav>
 
-    <section id="HomePage">
-      <div id="textHome">
-        <h1>Esame di Stato 2024/2025</h1>
-        <h2>Giulia Fontanella</h2>
-        <h3>Liceo Statale Carlo Urbani,&nbsp;5ªH</h3>
-      </div>
-      <div id="bottomHome">
-        <div id="citHome">
-          <p>"Il tempo è come un vento che soffia via tutto,<br>ma che ci lascia anche il dono dei ricordi."<br>– Emily Dickinson</p>
+    <section class="schermataPrincipale">
+        <div id="home_Page" style="height: 100vh; display: flex; flex-flow: column;">
+            <div id="homeSection">
+                <p class="testoHome osservato fadeInH" style="font-size: calc(15px + 4vw); font-weight: bold;">Esame di Stato 2022/2023</p>
+                <p class="testoHome osservato fadeInH" style="font-size: calc(13px + 3.5vw);">Ciotola Emanuele</p>
+                <p class="citazioneHomePage osservato fadeInW"><span style="font-style: italic;">"Il tempo è come un vento che soffia via tutto,<br>ma che ci lascia anche il dono dei ricordi"</span><br>– Emily Dickinson</p>
+            </div>
         </div>
-        <img id="fotoHome" src="assets/LogoUrbani.png" alt="Foto scuola">
-      </div>
+        <div id="fotoRicordi">
+            <img src="Assets/images/FotoRicordi.jpg" width="100%" draggable="false" style="display: block; padding: 0 2vw 0 2vw; pointer-events: none;">
+        </div>
     </section>
 
-    <section id="capolavoriPage">
-      <h1>Capolavori</h1>
-      <div class="capolavoro">
-        <h2>Anno scolastico 2023/2024</h2>
-        <p>In occasione della giornata mondiale della salute mentale, è stato realizzato a Villa Bruno, San Giorgio a Cremano, un progetto con la partecipazione di 4 attori. I primi 3 hanno interpretato personaggi con disabilità psicologiche, mentre l’ultimo ha assunto il ruolo del medico Basaglia, che con la legge 180 ha imposto la chiusura dei manicomi e regolamentato i TSO, includendo i servizi per la salute mentale. Dopo le interpretazioni abbiamo potuto parlare con gli attori esprimendo le nostre idee.</p>
-        <div class="fotoCapolavoro">
-          <img src="assets/capolavoro2023-24/villabruno1.webp" alt="Prima foto capolavoro 2023/2024">
-          <img src="assets/capolavoro2023-24/villabruno2.webp" alt="Seconda foto capolavoro 2023/2024">
-          <img src="assets/capolavoro2023-24/villabruno3.webp" alt="Terza foto capolavoro 2023/2024">
-          <img src="assets/capolavoro2023-24/villabruno4.webp" alt="Quarta foto capolavoro 2023/2024">
-          <img src="assets/capolavoro2023-24/villabruno5.webp" alt="Quinta foto capolavoro 2023/2024">
-          <img src="assets/capolavoro2023-24/villabruno6.webp" alt="Sesta foto capolavoro 2023/2024">
+    <section id="educazione_civica_Page" style="padding-top: calc(45px + 1vw); margin: 0 20px 0 20px;">
+        <p class="osservato fadeInH titoloSezione">Etica</p>
+        <p class="osservato fadeInH sottotitoloSezione">delle scienze e delle nuove&nbsp;tecnologie</p> <!-- &nbsp; serve a non far andare mai a capo finchè può -->
+        <div style="background-image: url(Assets/images/TriangoliViaDellaPace.svg); padding: calc(45px + 1vw) 0 10px 0;">
+            <div class="materiaEC osservato fadeInW">
+                <div class="titolo_materiaEC sinistra">
+                    <p style="font-size: calc(10px + 0.8vw);">Storia</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">L'invenzione della<br>bomba atomica</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>L'invenzione della bomba atomica durante la Seconda Guerra Mondiale ha sollevato questioni etiche significative. Da un lato, alcuni sostengono che l'uso della bomba abbia permesso di porre fine alla guerra più rapidamente e di salvare vite umane, poiché un'invasione del Giappone avrebbe causato un numero elevato di morti. D'altro canto, l'utilizzo della bomba ha causato la morte di centinaia di migliaia di civili innocenti, e ha aperto la strada per l'utilizzo di armi nucleari in futuri conflitti. Inoltre, la decisione di utilizzare la bomba atomica è stata criticata perché il Giappone era già in condizioni precarie e stava cercando di arrendersi prima che la bomba fosse utilizzata. Ci sono state anche preoccupazioni per i suoi effetti a lungo termine sulla salute e sull'ambiente.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW" style="flex-direction: row-reverse;">
+                <div class="titolo_materiaEC destra">
+                    <p style="font-size: calc(10px + 0.8vw);">Filosofia</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">L'etica</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>Il termine «etica» fu introdotto da Aristotele per designare le sue trattazioni di filosofia della pratica; indica quella parte della filosofia che si occupa del costume, ossia del comportamento umano. Semplificando il concetto, è possibile affermare che parlando di etica ci si riferisca ad ogni dottrina o riflessione speculativa intorno al comportamento pratico dell’uomo, al fine di individuare il vero bene e i mezzi atti a conseguirlo, ma anche quali siano i doveri morali dell’uomo verso sé stesso e verso gli altri e quali i criteri per giudicare sulla moralità delle azioni umane. Più in generale, l’etica è oggi altresì intesa come complesso di norme morali e di costume che un individuo, o un gruppo di individui, segue nelle proprie azioni e che sono in grado di identificare un preciso comportamento nella vita di relazione con riferimento a specifiche situazioni (es. etica cristiana; etica del lavoro, ecc.). L’etica è quindi sia un insieme di norme e di valori che regolano il comportamento dell’uomo in relazione agli altri, sia un criterio che permette all’uomo stesso di giudicare i comportamenti, propri e altrui, rispetto alle categorie di "bene" e "male".</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW">
+                <div class="titolo_materiaEC sinistra">
+                    <p style="font-size: calc(10px + 0.8vw);">Italiano</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">I ragazzi di<br>via Panisperna</p>  
+                </div>
+                <div style="flex: 1.5;">
+                    <p>"Ragazzi di via Panisperna" è il soprannome di un gruppo di giovani scienziati italiani, guidato da Enrico Fermi, che negli anni trenta del Novecento operò presso il Regio istituto di fisica dell'Università di Roma, allora ubicato in via Panisperna n. 90. La grandezza di questo gruppo sta nell'aver dato l'avvio per lo sviluppo scientifico dei reattori e delle bombe nucleari. Con l'inizio del periodo fascista e, in particolare, l'introduzione delle leggi razziali in Italia, il gruppo dei ragazzi di via Panisperna si sciolse sia per mancanza di risorse all'interno dell'università, sia per la diversa ideologia dei membri del gruppo rispetto al regime fascista. Alcuni andarono negli Stati Uniti per il progetto Manhattan, altri in Inghilterra. L'unico scienziato di cui si persero le tracce fu Ettore Majorana. La sua scomparsa venne tratta da Leonardo Sciascia nel saggio «La scomparsa di Majorana». L'autore raccolse qui le notizie frammentarie sul fatto e le dichiarazioni di persone vicine a Majorana, rielaborandole in maniera personale.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW" style="flex-direction: row-reverse;">
+                <div class="titolo_materiaEC destra">
+                    <p style="font-size: calc(10px + 0.8vw);">Arte</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">Il Bauhaus</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>Il Bauhaus è una nuova e democratica scuola pubblica fondata da Walter Gropius negli anni Trenta, in cui gli allievi e i docenti studiano, vivono e lavorano insieme, condividendo esperienze e apprendendo. Questo approccio si basa su una concezione culturale pragmatica, incentrata sul confronto delle idee e sulla volontà di creare un'arte che sia soprattutto utile e in grado di comprendere e soddisfare i bisogni delle persone comuni. In breve tempo, il Bauhaus si trasforma in un movimento emblematico di una precisa etica, in cui l'arte diventa anche un mezzo per rispettare le persone. Si pone come un ostacolo al nazismo che agita la Germania di quegli anni, sia dal punto di vista sociale a causa del regime dittatoriale, sia dal punto di vista tecnologico.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW">
+                <div class="titolo_materiaEC sinistra">
+                    <p style="font-size: calc(10px + 0.8vw);">Scienze naturali</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">L'eutanasia</p> 
+                </div>
+                <div style="flex: 1.5;">
+                    <p>L'eutanasia, nota anche come "morte assistita" o "suicidio assistito", solleva questioni etiche complesse. La pratica consiste nell'aiutare una persona a morire in modo volontario e indolore, generalmente quando sta soffrendo a causa di una malattia terminale o di un'altra condizione irreversibile.Da un lato, alcune persone sostengono che l'eutanasia sia un atto di misericordia e di rispetto per la libertà di scelta, che consente alle persone di evitare una sofferenza inutile e di morire con dignità. D'altro canto, ci sono preoccupazioni che l'eutanasia possa essere utilizzata in modo improprio, ad esempio per eliminare individui indesiderati o per risparmiare in alcuni casi il denaro delle istituzioni sanitarie. Inoltre, c'è il rischio che una volta legalizzata, l'eutanasia possa essere utilizzata come una soluzione facile per problemi sociali e medici complessi, senza considerare le alternative. In generale, l'etica dell'eutanasia è un argomento controverso e complesso che richiede una considerazione attenta dei valori e delle preoccupazioni di tutte le parti interessate.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW" style="flex-direction: row-reverse;">
+                <div class="titolo_materiaEC destra">
+                    <p style="font-size: calc(10px + 0.8vw);">Matematica e fisica</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">L'eutanasia<br>in Olanda</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <img src="Assets/images/EutanasiaOlandaEC.svg" width="80%">
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW">
+                <div class="titolo_materiaEC sinistra">
+                    <p style="font-size: calc(10px + 0.8vw);">Scienze motorie</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">Il doping<br>tecnologico</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>Il doping tecnologico si riferisce all'uso di tecnologie avanzate per migliorare le prestazioni sportive degli atleti. Questo può includere l'utilizzo di dispositivi elettronici, come gli occhiali a raggi infrarossi per migliorare la visione notturna, o di sostanze chimiche per migliorare la resistenza fisica. Il doping tecnologico solleva questioni etiche poiché viola l'idea di gareggiare su un campo di gioco equo e crea un dislivello nel terreno di gioco per gli atleti che non possono permettersi o non hanno accesso alle tecnologie avanzate. Inoltre, ci sono preoccupazioni per la salute degli atleti che utilizzano tecnologie o sostanze potenzialmente pericolose. Il doping tecnologico è stato bandito da molte organizzazioni sportive, tra cui la Federazione Internazionale di Atletica Leggera e il Comitato Olimpico Internazionale, che stabiliscono regole rigorose per prevenire l'uso di tecnologie e sostanze vietate. Tuttavia, con l'evoluzione costante della tecnologia, diventa sempre più difficile tenere il passo con le nuove forme di doping tecnologico e prevenirle. In generale, l'etica del doping tecnologico richiede un equilibrio tra il desiderio di promuovere la competizione sportiva e il rispetto della salute e della sicurezza degli atleti, nonché la necessità di garantire una competizione equa.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW" style="flex-direction: row-reverse;">
+                <div class="titolo_materiaEC destra">
+                    <p style="font-size: calc(10px + 0.8vw);">Informatica</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">Gli algoritmi<br>decisionali</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>Gli algoritmi decisionali sono utilizzati per prendere decisioni automatizzate in molti ambiti, con l'aumento dell'utilizzo delle intelligenze artificiali, diventano sempre più sofisticati. Tuttavia, gli algoritmi decisionali possono scaturite problemi etici se non vengono progettati e utilizzati in modo responsabile, perpetuando le discriminazioni e le ingiustizie presenti nei dati usati per il loro "addestramento". Per affrontare questi problemi è importante adottare pratiche etiche di progettazione, utilizzo e valutazione degli algoritmi. Gli algoritmi decisionali sono progettati per operare in base ai dati disponibili e alle regole impostate, mentre il giudizio umano può tenere conto di elementi quali l'empatia, la flessibilità e la creatività. A oggi, quindi, è impossibile affermare che il livello dei suddetti algoritmi eguagli quello della coscienza umana, nonostante in alcuni casi possano essere molto più efficienti: il giudizio umano è fondamentale per prendere decisioni in molte situazioni, in quanto permette di considerare aspetti complessi e sfumati che gli algoritmi decisionali potrebbero non essere in grado di cogliere.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW">
+                <div class="titolo_materiaEC sinistra">
+                    <p style="font-size: calc(10px + 0.8vw);">Religione</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">L'aborto</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>L'aborto è l’interruzione della gravidanza. Questo evento può avvenire per cause naturali, indotte o spontanee. Ponendo l’attenzione sull'aborto indotto possiamo dire che è di tipo premeditato e deve avvenire entro 180 giorni dalla fecondazione. Ci sono diverse posizioni riguardo questa delicata operazione tra cui la Chiesa cattolica, che ritiene la vita essere il dono di Dio più importante. Di conseguenza, siccome l’aborto è una pratica contro la vita e contro il volere di Dio, è considerato peccato capitale. Non solo l'aborto è rifiutato dalla Chiesa, ma anche tutti i metodi di contraccezione di emergenza volontari, che non consentono di portare avanti la gravidanza.</p>
+                </div>
+            </div>
+            <div class="materiaEC osservato fadeInW" style="flex-direction: row-reverse;">
+                <div class="titolo_materiaEC destra">
+                    <p style="font-size: calc(10px + 0.8vw);">Inglese</p>
+                    <p style="font-size: calc(12px + 2.5vw); font-weight: bold;">Frankenstein</p>
+                </div>
+                <div style="flex: 1.5;">
+                    <p>Almost two centuries after its publication, Mary Shelley's Frankenstein has assumed the role of a popular myth for our technical-scientific culture. Read as a romantic critique of Enlightenment rationalism, Frankenstein is often cited today as an alarm before the risks posed by a research of scientific knowledge and dominion over nature. A more nuanced reading of Shelley's novel, however, doesn’t suggest an adamant opposition to science. The story of Frankenstein is now familiar: it is the story of the scientist Victor Frankenstein, who, driven by a desire to discover the mysteries of life, strives to create a human being. Instead, you produce a monster, which brings its creator suffering and ruin. What happens is precisely to demonstrate that both from a scientific and also an ethical point of view it is neither possible nor right to violate the rules of nature so excessively.</p>
+                </div>
+            </div>
         </div>
-        <div class="capolavoroMotivo">
-          <h3>Per te è un capolavoro perché...</h3>
-          <p>Questa attività mi ha fatto rendere conto di quanto la psicologia mi affascini e sia un tema ancora oggi poco trattato. Una delle cose che mi ha maggiormente colpito, dopo l'interpretazione degli attori, è stata la reazione di noi ragazzi che, inizialmente, non sapevamo della messa in scena e ci siamo trovati incapaci di reagire. Questo progetto mi ha fatto appassionare al mondo della psicologia a tal punto da partecipare alle olimpiadi di neuroscienze e fare approfondimenti sul sistema nervoso.</p>
-        </div>
-      </div>
-      <div class="capolavoro">
-        <h2>Anno scolastico 2024/2025</h2>
-        <p>La scorsa estate sono partita per Dublino con la mia professoressa Loredana Di Franco. Abbiamo alloggiato per due settimane al Trinity College, partecipando a lezioni e attività. Nel tempo libero abbiamo visitato la città e luoghi come la Cattedrale di San Patrizio, il Castello di Kilkenny, il quartiere Temple Bar, il National Botanic Gardens e St. Stephen’s Green Park. Ho conosciuto anche ragazzi di altri Paesi, scoprendo un modo di vivere diverso dal mio. È stata un’esperienza indimenticabile!</p>
-        <div class="fotoCapolavoro">
-          <img src="assets/capolavoro2024-25/dublino1.webp" alt="Prima foto capolavoro 2024/2025">
-          <img src="assets/capolavoro2024-25/dublino2.webp" alt="Seconda foto capolavoro 2024/2025">
-          <img src="assets/capolavoro2024-25/dublino3.webp" alt="Terza foto capolavoro 2024/2025">
-          <img src="assets/capolavoro2024-25/dublino4.webp" alt="Quarta foto capolavoro 2024/2025">
-          <img src="assets/capolavoro2024-25/dublino5.webp" alt="Quinta foto capolavoro 2024/2025">
-          <img src="assets/capolavoro2024-25/dublino6.webp" alt="Sesta foto capolavoro 2024/2025">
-        </div>
-        <div class="capolavoroMotivo">
-          <h3>Per te è un capolavoro perché...</h3>
-          <p>Grazie a questa esperienza ho vissuto per due settimane in un contesto completamente diverso dalla mia quotidianità in Italia. Essere immersa in un ambiente internazionale mi ha permesso di crescere personalmente e migliorare il mio inglese. Le lezioni pomeridiane e le attività con altri studenti stranieri mi hanno aiutata a mettere in pratica ciò che imparavo. Ho stretto nuove amicizie e scoperto Dublino anche al di fuori dei classici percorsi turistici.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="PCTOPage">
-      <h1>PCTO</h1>
-      <h2>Blablabla</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint ab quaerat minima magnam repellendus, ut vero libero quae officia enim nobis rerum dolorem ipsa labore voluptatum aspernatur voluptatibus dolore reiciendis et pariatur consectetur beatae. Odit illo earum voluptatem inventore at provident, expedita ea ipsam neque rem sequi soluta commodi, porro voluptate perspiciatis magnam dignissimos? Tenetur veritatis ipsum laborum esse exercitationem aut molestiae iste necessitatibus quae nemo ipsa, ducimus voluptatibus beatae enim eius dicta sit officia ab commodi. Inventore explicabo dolores labore eveniet enim quaerat nostrum necessitatibus voluptate natus ipsa iusto rerum eum laborum saepe a, beatae, fugiat deleniti illo?</p>
+    <section id="pcto_Page" style="background-color: #EDE8DD; color: #040405; padding-top: calc(45px + 1vw);">
+        <p class="osservato fadeInH titoloSezione">PCTO</p>
+        <p class="osservato fadeInH sottotitoloSezione">percorsi per le competenze trasversali e&nbsp;l'orientamento</p>
+        <div style="background-image: url(Assets/images/SpiraleAurea.svg); padding-bottom: 10px;">
+            <div id="anniPCTO">
+                <div class="annoPCTO osservato fadeInH">
+                    <p style="font-size: calc(12px + 1.8vw); font-weight: bold;">Terzo anno</p>
+                    <p>Economia e Marketing: concetti chiave per&nbsp;il&nbsp;successo&nbsp;aziendale.</p>
+                </div>
+                <div class="annoPCTO osservato fadeInH">
+                    <p style="font-size: calc(12px + 1.8vw); font-weight: bold;">Quarto anno</p>
+                    <p>Introduzione al mondo&nbsp;universitario: orientamento&nbsp;e&nbsp;FAQ.</p>
+                </div>
+                <div class="annoPCTO osservato fadeInH">
+                    <p style="font-size: calc(12px + 1.8vw); font-weight: bold;">Quinto anno</p>
+                    <p>Etica delle nuove tecnologie: le intelligenze artificiali&nbsp;e&nbsp;i&nbsp;deep&nbsp;fake.</p>
+                </div>
+            </div>
+            <div id="relazioneFinalePCTO">
+                <p class="osservato fadeInH" style="font-size: calc(12px + 1.8vw); font-weight: bold; text-align: center;">Relazione finale</p>
+                <p class="osservato fadeInH" style="margin-bottom: 2vh;">Il PCTO rappresenta un'evoluzione dei precedenti percorsi di alternanza scuola-lavoro e ha lo scopo di promuovere l'acquisizione di competenze trasversali, ovvero quelle abilità e conoscenze che vanno al di là delle materie tradizionali, ma che sono fondamentali per affrontare le sfide del mondo del lavoro e per la formazione di cittadini attivi e consapevoli.</p>
+                <p class="osservato fadeInH" style="margin-bottom: 2vh;">Per quanto a livello teorico il PCTO sia un'attività pressoché pratica, si è rivelata, nel mio caso, quasi completamente di matrice teorica. Numerosi sono stati gli argomenti trattati e alcuni hanno suscitato in maniera particolare il mio interesse: tra questi troviamo sicuramente il funzionamento di Google Ads, gli elementi trattati durante l'evento di divulgazione scientifica dell'Università Federico II, e il meccanismo di IA noto come "deep fake".</p>
+                <div class="argomentoPCTO osservato fadeInW" style="margin-bottom: 2vh;">
+                    <p style="font-size: calc(11px + 1.5vw); font-weight: bold;">Google Ads</p>
+                    <p>Google Ads è una piattaforma pubblicitaria online offerta da Google che consente alle aziende di promuovere i propri prodotti e servizi attraverso annunci pubblicitari su diversi canali digitali.<br>Per utilizzare Google Ads in ottica lavorativa, è necessario definire gli obiettivi pubblicitari, per esempio l'aumento delle vendite. Una volta creata la campagna, è importante monitorarne regolarmente le performance analizzando le metriche come il numero di clic, al fine di ottimizzare le strategie pubblicitarie. La piattaforma offre anche funzionalità avanzate come la segmentazione geografica, per raggiungere solo specifici luoghi geografici.<br>Google Ads è dunque uno strumento potente per la pubblicità online che consente alle aziende di raggiungere un vasto pubblico di potenziali clienti.</p>
+                </div>
+                <div class="argomentoPCTO osservato fadeInW" style="margin-bottom: 2vh;">
+                    <p style="font-size: calc(11px + 1.5vw); font-weight: bold;">Evento Università Federico II</p>
+                    <p>Oltre che per il solo fine divulgativo, l'iniziativa intrapresa dall'Università Federico II è stata utile a introdurci il mondo universitario, permettendoci di conoscere docenti e studenti. È anche da sottolineare il fatto che, in quanto unica iniziativa in presenza nell'arco dei primi due anni, è stata quella più coinvolgente.<br>La presentazione ha interessato principalmente il campo fisico e quello medico: notevole importanza è stata data alla spiegazione del funzionamento di alcune terapie contro il cancro, come la radioterapia. Al termine dell'attività ho avuto il piacere di parlare personalmente con uno dei professori, il quale mi ha amichevolmente dato qualche dritta sul percorso di studi che intraprenderò.</p>
+                </div>
+                <div class="argomentoPCTO osservato fadeInW">
+                    <p style="font-size: calc(11px + 1.5vw); font-weight: bold;">Deep fake</p>
+                    <p>Il deepfake è una tecnica per la sintesi dell'immagine umana basata sull'intelligenza artificiale, usata per combinare e sovrapporre immagini e video esistenti con altri. Questa tecnica è stata usata per creare fake news, bufale e truffe, per compiere atti di cyberbullismo o altri crimini informatici di varia natura. I deepfake stanno diventando sempre più diffusi e realistici grazie al continuo sviluppo delle IA. È quindi importante essere consapevoli di questo fenomeno e di come riconoscerlo per prevenire la disinformazione e gli attacchi hacker.</p>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section id="ricordiPage">
-      <h1>Ricordi</h1>
-      <h2>Blablabla</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel aut voluptatem tempore recusandae quae accusantium dicta voluptas. Dicta rem sint consequuntur. Minus magnam est atque voluptatibus temporibus quia libero? Consectetur sequi molestias eos maxime tempora reprehenderit vitae deserunt explicabo eum. Quos eveniet, magni labore doloremque sunt minus laborum, dolorum vero nesciunt cum blanditiis adipisci minima nemo beatae quasi consequuntur voluptates atque molestias voluptas dignissimos reiciendis animi. Magnam, inventore! Alias eveniet autem doloribus cumque minima veritatis voluptas necessitatibus minus. Vero ipsum reiciendis culpa sed maxime vitae reprehenderit quidem? Maiores nulla earum eius dignissimos error ratione aspernatur! Veritatis deserunt nihil pariatur!</p>
-    </section>
-
-    <script src="main.js"></script>
+    
+    <script src="Javascript/navbar.js"></script>
+    <script src="Javascript/main.js"></script>
 </body>
 </html>
